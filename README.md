@@ -22,7 +22,7 @@ Desenvolvemos esta aplicação para auxiliar o "Publicador de Boas Novas" a regi
 - ![Docker](https://img.shields.io/badge/-Docker-2496ED?style=flat-square&logo=Docker&logoColor=white)
 - ![Nginx](https://img.shields.io/badge/-Nginx-269539?style=flat-square&logo=Nginx&logoColor=white)
 
-📺 [Vídeo de Visão Geral do Projeto](https://youtu.be/elgTpzwykfo)
+📺 [Vídeo de Visão Geral do Projeto](https://youtu.be/mD65-vTK5FE)
 
 ## O sistema está organizado em submódulos:
 
