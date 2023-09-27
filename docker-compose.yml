@@ -2,21 +2,22 @@ version: '3'
 
 services:
   backend:
-    build: ./backend
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
     ports:
-      - "5000:5000"
+      - "5001:5001"
     volumes:
       - "./database:/app/database"  # mapeando o diretório do SQLite para o contêiner
 
   frontend:
-    build: ./frontend
+    build: 
+      context: ./frontend
+      dockerfile: Dockerfile
     ports:
       - "80:80"
-
-  database:
-    image: "linuxserver/sqlite3"
-    volumes:
-      - "./database:/config"
+    depends_on:
+      - backend  # Se o frontend só deve iniciar depois do backend
     environment:
       - PUID=1000
       - PGID=1000
