@@ -3,8 +3,7 @@ version: '3'
 services:
   backend:
     build:
-      context: ./backend
-      dockerfile: Dockerfile
+      context: https://github.com/mjosejunior/mvp_jrmj_sp2_back.git
     ports:
       - "5001:5001"
     volumes:
@@ -12,8 +11,7 @@ services:
 
   frontend:
     build: 
-      context: ./frontend
-      dockerfile: Dockerfile
+      context: https://github.com/mjosejunior/mvp_jrmj_sp2_front.git
     ports:
       - "80:80"
     depends_on:
